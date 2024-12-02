@@ -7,7 +7,7 @@ name = "subtle"
 # - if any updates were made to the README, also update the module documentation in src/lib.rs
 version = "2.4.1"
 authors = ["Isis Lovecruft <isis@patternsinthevoid.net>",
-           "Henry de Valence <hdevalence@hdevalence.ca>"]
+    "Henry de Valence <hdevalence@hdevalence.ca>"]
 readme = "README.md"
 license = "BSD-3-Clause"
 repository = "https://github.com/dalek-cryptography/subtle"
@@ -22,13 +22,16 @@ exclude = [
 ]
 
 [badges]
-travis-ci = { repository = "dalek-cryptography/subtle", branch = "master"}
+travis-ci = { repository = "dalek-cryptography/subtle", branch = "master" }
 
 [dev-dependencies]
 rand = { version = "0.7" }
 
 [features]
-default = ["std", "i128"]
+default = [
+    #    "std",
+    "i128",
+]
 std = []
 i128 = []
 # DEPRECATED: As of 2.4.1, this feature does nothing.
